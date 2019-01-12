@@ -1,0 +1,538 @@
+[ 2019-01-12T09:20:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000271s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:20:52+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:20:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007204s ]
+[ 2019-01-12T09:20:52+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:20:52+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.007853s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:20:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'about' [ RunTime:0.006705s ]
+[ 2019-01-12T09:20:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_about' [ RunTime:0.008528s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_about' ORDER BY ORDINAL_POSITION [ RunTime:0.053437s ]
+[ 2019-01-12T09:20:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000203s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:20:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:20:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007062s ]
+[ 2019-01-12T09:20:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:20:53+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002507s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.048461s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'about' LIMIT 1 [ RunTime:0.000779s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'about' , 'About' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547256053 , 1547256053) [ RunTime:0.095426s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'about/index' LIMIT 1 [ RunTime:0.002580s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'about/add' LIMIT 1 [ RunTime:0.002556s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'about/edit' LIMIT 1 [ RunTime:0.002855s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'about/del' LIMIT 1 [ RunTime:0.002517s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'about/multi' LIMIT 1 [ RunTime:0.001374s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=104,`name`='about/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1547256053  WHERE  `id` = 98 [ RunTime:0.025744s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'about/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547256053 , 1547256053) [ RunTime:0.001993s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'about/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547256053 , 1547256053) [ RunTime:0.001359s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'about/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547256053 , 1547256053) [ RunTime:0.001259s ]
+[ 2019-01-12T09:20:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'about/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547256053 , 1547256053) [ RunTime:0.001400s ]
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000116s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006470s ]
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013117s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.002631s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_service' [ RunTime:0.001627s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_service' ORDER BY ORDINAL_POSITION [ RunTime:0.024623s ]
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004722s ]
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:36:57+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013285s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.038808s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'service' LIMIT 1 [ RunTime:0.001950s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'service' , '服务介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.043923s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/index' LIMIT 1 [ RunTime:0.001297s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/add' LIMIT 1 [ RunTime:0.001769s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/edit' LIMIT 1 [ RunTime:0.001497s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/del' LIMIT 1 [ RunTime:0.001112s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/multi' LIMIT 1 [ RunTime:0.001029s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 109 , 'service/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.001820s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 109 , 'service/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.009532s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 109 , 'service/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.001547s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 109 , 'service/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.003293s ]
+[ 2019-01-12T09:36:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 109 , 'service/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547257017 , 1547257017) [ RunTime:0.001462s ]
+[ 2019-01-12T09:43:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:43:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:43:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004051s ]
+[ 2019-01-12T09:43:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:43:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011596s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:43:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.001992s ]
+[ 2019-01-12T09:43:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_service' [ RunTime:0.002128s ]
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004100s ]
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012270s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.002020s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_service' [ RunTime:0.003938s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_service' ORDER BY ORDINAL_POSITION [ RunTime:0.032102s ]
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004325s ]
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:43:53+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011567s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018118s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'service' LIMIT 1 [ RunTime:0.002906s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/index' LIMIT 1 [ RunTime:0.001958s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/add' LIMIT 1 [ RunTime:0.002113s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/edit' LIMIT 1 [ RunTime:0.002170s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/del' LIMIT 1 [ RunTime:0.001759s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'service/multi' LIMIT 1 [ RunTime:0.001927s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=109,`name`='service/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1547257433  WHERE  `id` = 110 [ RunTime:0.008840s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=109,`name`='service/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1547257433  WHERE  `id` = 111 [ RunTime:0.002050s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=109,`name`='service/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1547257433  WHERE  `id` = 112 [ RunTime:0.001644s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=109,`name`='service/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1547257433  WHERE  `id` = 113 [ RunTime:0.001691s ]
+[ 2019-01-12T09:43:53+08:00 ][ sql ] [ SQL ] UPDATE `fa_auth_rule`  SET `pid`=109,`name`='service/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1547257433  WHERE  `id` = 114 [ RunTime:0.001702s ]
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000118s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004006s ]
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:46:42+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011440s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:46:42+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'case' [ RunTime:0.001551s ]
+[ 2019-01-12T09:46:42+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_case' [ RunTime:0.001360s ]
+[ 2019-01-12T09:46:42+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_case' ORDER BY ORDINAL_POSITION [ RunTime:0.016439s ]
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004027s ]
+[ 2019-01-12T09:46:42+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:46:42+08:00 ][ error ] [0]Parse error: syntax error, unexpected 'Case' (T_CASE), expecting identifier (T_STRING)[E:\honghai\fastadmin\application\admin\command\FastAdmin5c3947026f5a2.php:24]
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004351s ]
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:47:43+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012585s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:47:43+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'case' [ RunTime:0.002699s ]
+[ 2019-01-12T09:47:43+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_case' [ RunTime:0.002556s ]
+[ 2019-01-12T09:47:43+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_case' ORDER BY ORDINAL_POSITION [ RunTime:0.018327s ]
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000273s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007899s ]
+[ 2019-01-12T09:47:43+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:47:43+08:00 ][ error ] [0]Parse error: syntax error, unexpected 'Case' (T_CASE), expecting identifier (T_STRING)[E:\honghai\fastadmin\application\admin\command\FastAdmin5c39473facd24.php:24]
+[ 2019-01-12T09:49:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:49:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:49:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004041s ]
+[ 2019-01-12T09:49:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:49:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003447s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:49:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'case' [ RunTime:0.002750s ]
+[ 2019-01-12T09:49:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_case' [ RunTime:0.003213s ]
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003608s ]
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012299s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'document' [ RunTime:0.001374s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_document' [ RunTime:0.001322s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_document' ORDER BY ORDINAL_POSITION [ RunTime:0.018905s ]
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003561s ]
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:51:00+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012271s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016023s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'document' LIMIT 1 [ RunTime:0.002507s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'document' , '案例介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.038282s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'document/index' LIMIT 1 [ RunTime:0.002743s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'document/add' LIMIT 1 [ RunTime:0.002355s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'document/edit' LIMIT 1 [ RunTime:0.002245s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'document/del' LIMIT 1 [ RunTime:0.002373s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'document/multi' LIMIT 1 [ RunTime:0.002778s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 115 , 'document/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.002675s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 115 , 'document/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.001538s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 115 , 'document/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.001286s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 115 , 'document/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.001195s ]
+[ 2019-01-12T09:51:00+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 115 , 'document/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547257860 , 1547257860) [ RunTime:0.001181s ]
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003812s ]
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012327s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'news_category' [ RunTime:0.001276s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_news_category' [ RunTime:0.001371s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_news_category' ORDER BY ORDINAL_POSITION [ RunTime:0.015263s ]
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000123s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004158s ]
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T09:57:36+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003377s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017152s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'news' LIMIT 1 [ RunTime:0.002034s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'news' , 'news' , 'fa fa-list' , '' , 1 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.039134s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'news/category' LIMIT 1 [ RunTime:0.004799s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (121 , 'news/category' , '分类' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.059412s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/category/index' LIMIT 1 [ RunTime:0.006034s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/category/add' LIMIT 1 [ RunTime:0.006500s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/category/edit' LIMIT 1 [ RunTime:0.006227s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/category/del' LIMIT 1 [ RunTime:0.003116s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/category/multi' LIMIT 1 [ RunTime:0.002944s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'news/category/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.004380s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'news/category/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.003397s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'news/category/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.001951s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'news/category/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.001700s ]
+[ 2019-01-12T09:57:36+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'news/category/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547258256 , 1547258256) [ RunTime:0.001879s ]
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000131s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005006s ]
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:11:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012509s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:11:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'news_trends' [ RunTime:0.001157s ]
+[ 2019-01-12T10:11:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_news_trends' [ RunTime:0.001073s ]
+[ 2019-01-12T10:11:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_news_trends' ORDER BY ORDINAL_POSITION [ RunTime:0.028808s ]
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005577s ]
+[ 2019-01-12T10:11:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:11:45+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012128s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.020110s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'news' LIMIT 1 [ RunTime:0.001829s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'news/trends' LIMIT 1 [ RunTime:0.001315s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (121 , 'news/trends' , '动态' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.034086s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/trends/index' LIMIT 1 [ RunTime:0.001357s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/trends/add' LIMIT 1 [ RunTime:0.001011s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/trends/edit' LIMIT 1 [ RunTime:0.002463s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/trends/del' LIMIT 1 [ RunTime:0.002245s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'news/trends/multi' LIMIT 1 [ RunTime:0.002029s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'news/trends/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.002478s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'news/trends/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.002051s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'news/trends/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.002227s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'news/trends/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.002058s ]
+[ 2019-01-12T10:11:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'news/trends/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547259105 , 1547259105) [ RunTime:0.002004s ]
+[ 2019-01-12T10:50:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000186s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:50:39+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:50:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.020929s ]
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002340s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_top' [ RunTime:0.001957s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_top' [ RunTime:0.002065s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_top' ORDER BY ORDINAL_POSITION [ RunTime:0.019502s ]
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006233s ]
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:50:40+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004053s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.027776s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.001902s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'introduce' , 'introduce' , 'fa fa-list' , '' , 1 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.037500s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/top' LIMIT 1 [ RunTime:0.003931s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/top' , '顶部介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.032627s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/top/index' LIMIT 1 [ RunTime:0.003273s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/top/add' LIMIT 1 [ RunTime:0.003061s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/top/edit' LIMIT 1 [ RunTime:0.003341s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/top/del' LIMIT 1 [ RunTime:0.002965s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/top/multi' LIMIT 1 [ RunTime:0.003049s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 135 , 'introduce/top/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.004457s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 135 , 'introduce/top/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.003371s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 135 , 'introduce/top/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.001856s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 135 , 'introduce/top/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.001776s ]
+[ 2019-01-12T10:50:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 135 , 'introduce/top/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261440 , 1547261440) [ RunTime:0.001800s ]
+[ 2019-01-12T10:51:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005169s ]
+[ 2019-01-12T10:51:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012802s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_block' [ RunTime:0.005004s ]
+[ 2019-01-12T10:51:01+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_block' [ RunTime:0.005128s ]
+[ 2019-01-12T10:51:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_block' ORDER BY ORDINAL_POSITION [ RunTime:0.042122s ]
+[ 2019-01-12T10:51:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000110s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:02+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004545s ]
+[ 2019-01-12T10:51:02+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:02+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002232s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.020303s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.001738s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/block' LIMIT 1 [ RunTime:0.001396s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/block' , '顶部介绍模块' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.031879s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/block/index' LIMIT 1 [ RunTime:0.001542s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/block/add' LIMIT 1 [ RunTime:0.002208s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/block/edit' LIMIT 1 [ RunTime:0.002420s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/block/del' LIMIT 1 [ RunTime:0.002423s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/block/multi' LIMIT 1 [ RunTime:0.002470s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'introduce/block/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.003360s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'introduce/block/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.002118s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'introduce/block/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.001412s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'introduce/block/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.001348s ]
+[ 2019-01-12T10:51:02+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 141 , 'introduce/block/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261462 , 1547261462) [ RunTime:0.001410s ]
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000116s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004567s ]
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011188s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_team' [ RunTime:0.001304s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_team' [ RunTime:0.001170s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_team' ORDER BY ORDINAL_POSITION [ RunTime:0.017680s ]
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004596s ]
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:12+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013995s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.027444s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.002465s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/team' LIMIT 1 [ RunTime:0.002327s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/team' , '企业团队' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.027363s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/team/index' LIMIT 1 [ RunTime:0.002209s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/team/add' LIMIT 1 [ RunTime:0.001851s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/team/edit' LIMIT 1 [ RunTime:0.003034s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/team/del' LIMIT 1 [ RunTime:0.002653s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/team/multi' LIMIT 1 [ RunTime:0.002839s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 147 , 'introduce/team/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.002768s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 147 , 'introduce/team/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.001944s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 147 , 'introduce/team/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.002097s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 147 , 'introduce/team/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.001596s ]
+[ 2019-01-12T10:51:12+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 147 , 'introduce/team/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261472 , 1547261472) [ RunTime:0.001722s ]
+[ 2019-01-12T10:51:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:23+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004546s ]
+[ 2019-01-12T10:51:23+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:23+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012180s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_member' [ RunTime:0.001674s ]
+[ 2019-01-12T10:51:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_member' [ RunTime:0.001700s ]
+[ 2019-01-12T10:51:23+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_member' ORDER BY ORDINAL_POSITION [ RunTime:0.017881s ]
+[ 2019-01-12T10:51:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:24+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004931s ]
+[ 2019-01-12T10:51:24+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:24+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002534s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.029292s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.002054s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/member' LIMIT 1 [ RunTime:0.002542s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/member' , '成员介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.031121s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/member/index' LIMIT 1 [ RunTime:0.001486s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/member/add' LIMIT 1 [ RunTime:0.001321s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/member/edit' LIMIT 1 [ RunTime:0.001337s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/member/del' LIMIT 1 [ RunTime:0.001407s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/member/multi' LIMIT 1 [ RunTime:0.001268s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'introduce/member/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.001888s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'introduce/member/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.001478s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'introduce/member/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.001507s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'introduce/member/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.001470s ]
+[ 2019-01-12T10:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 153 , 'introduce/member/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261484 , 1547261484) [ RunTime:0.001297s ]
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004423s ]
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012150s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_videos' [ RunTime:0.001658s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_videos' [ RunTime:0.001503s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_videos' ORDER BY ORDINAL_POSITION [ RunTime:0.019599s ]
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004759s ]
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:40+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.010976s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.028033s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.002505s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos' LIMIT 1 [ RunTime:0.001638s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/videos' , '企业视频' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.092389s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos/index' LIMIT 1 [ RunTime:0.004697s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos/add' LIMIT 1 [ RunTime:0.004298s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos/edit' LIMIT 1 [ RunTime:0.003824s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos/del' LIMIT 1 [ RunTime:0.002920s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/videos/multi' LIMIT 1 [ RunTime:0.002894s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 159 , 'introduce/videos/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.017955s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 159 , 'introduce/videos/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.002919s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 159 , 'introduce/videos/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.002608s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 159 , 'introduce/videos/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.002865s ]
+[ 2019-01-12T10:51:40+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 159 , 'introduce/videos/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261500 , 1547261500) [ RunTime:0.002966s ]
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005128s ]
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012708s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_development' [ RunTime:0.003934s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_development' [ RunTime:0.004562s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_development' ORDER BY ORDINAL_POSITION [ RunTime:0.026522s ]
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000107s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004610s ]
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:51:53+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012807s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.035862s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.002665s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/development' LIMIT 1 [ RunTime:0.002499s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/development' , '发展历程' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.032179s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/development/index' LIMIT 1 [ RunTime:0.002553s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/development/add' LIMIT 1 [ RunTime:0.001805s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/development/edit' LIMIT 1 [ RunTime:0.001777s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/development/del' LIMIT 1 [ RunTime:0.001666s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/development/multi' LIMIT 1 [ RunTime:0.001593s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 165 , 'introduce/development/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.002053s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 165 , 'introduce/development/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.001865s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 165 , 'introduce/development/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.001613s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 165 , 'introduce/development/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.001847s ]
+[ 2019-01-12T10:51:53+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 165 , 'introduce/development/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261513 , 1547261513) [ RunTime:0.001736s ]
+[ 2019-01-12T10:52:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:52:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:52:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004992s ]
+[ 2019-01-12T10:52:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:52:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011415s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:52:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_series' [ RunTime:0.003838s ]
+[ 2019-01-12T10:52:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_series' [ RunTime:0.005280s ]
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005204s ]
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011931s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'intrtoduce_series' [ RunTime:0.002110s ]
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_intrtoduce_series' [ RunTime:0.002924s ]
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_intrtoduce_series' ORDER BY ORDINAL_POSITION [ RunTime:0.020375s ]
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000117s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005125s ]
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:52:44+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012929s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.032473s ]
+[ 2019-01-12T10:52:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce' LIMIT 1 [ RunTime:0.001900s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'intrtoduce' , 'intrtoduce' , 'fa fa-list' , '' , 1 , 'normal' , 1547261564 , 1547261564) [ RunTime:0.032740s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series' LIMIT 1 [ RunTime:0.002266s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (171 , 'intrtoduce/series' , '历程介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.039130s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series/index' LIMIT 1 [ RunTime:0.006519s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series/add' LIMIT 1 [ RunTime:0.006601s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series/edit' LIMIT 1 [ RunTime:0.006788s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series/del' LIMIT 1 [ RunTime:0.006123s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'intrtoduce/series/multi' LIMIT 1 [ RunTime:0.003888s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 172 , 'intrtoduce/series/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.003903s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 172 , 'intrtoduce/series/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.003025s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 172 , 'intrtoduce/series/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.003233s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 172 , 'intrtoduce/series/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.002926s ]
+[ 2019-01-12T10:52:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 172 , 'intrtoduce/series/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261565 , 1547261565) [ RunTime:0.001902s ]
+[ 2019-01-12T10:55:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:55:21+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:55:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004560s ]
+[ 2019-01-12T10:55:21+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:55:21+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003031s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:55:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'intrtoduce_series' [ RunTime:0.002617s ]
+[ 2019-01-12T10:55:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_intrtoduce_series' [ RunTime:0.002327s ]
+[ 2019-01-12T10:55:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000147s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:55:56+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:55:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004755s ]
+[ 2019-01-12T10:55:56+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:55:56+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012348s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:55:56+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'introduce_series' [ RunTime:0.001633s ]
+[ 2019-01-12T10:55:56+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_introduce_series' [ RunTime:0.001593s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_introduce_series' ORDER BY ORDINAL_POSITION [ RunTime:0.066028s ]
+[ 2019-01-12T10:55:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000227s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T10:55:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T10:55:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004895s ]
+[ 2019-01-12T10:55:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T10:55:57+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012763s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.028105s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce' LIMIT 1 [ RunTime:0.002509s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'introduce/series' LIMIT 1 [ RunTime:0.003242s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (134 , 'introduce/series' , '历程介绍' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.028067s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/series/index' LIMIT 1 [ RunTime:0.002060s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/series/add' LIMIT 1 [ RunTime:0.001621s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/series/edit' LIMIT 1 [ RunTime:0.002139s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/series/del' LIMIT 1 [ RunTime:0.001955s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'introduce/series/multi' LIMIT 1 [ RunTime:0.001659s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 178 , 'introduce/series/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.001928s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 178 , 'introduce/series/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.001955s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 178 , 'introduce/series/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.002003s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 178 , 'introduce/series/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.001809s ]
+[ 2019-01-12T10:55:57+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 178 , 'introduce/series/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547261757 , 1547261757) [ RunTime:0.001703s ]
+[ 2019-01-12T11:08:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000120s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T11:08:19+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T11:08:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005277s ]
+[ 2019-01-12T11:08:19+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T11:08:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011568s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T11:08:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'contact' [ RunTime:0.001824s ]
+[ 2019-01-12T11:08:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_contact' [ RunTime:0.001689s ]
+[ 2019-01-12T11:08:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_contact' ORDER BY ORDINAL_POSITION [ RunTime:0.019445s ]
+[ 2019-01-12T11:08:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T11:08:20+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T11:08:20+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005193s ]
+[ 2019-01-12T11:08:20+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T11:08:20+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013373s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021396s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'contact' LIMIT 1 [ RunTime:0.002909s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'contact' , '联系我们' , 'fa fa-circle-o\r' , '' , 1 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.049965s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'contact/index' LIMIT 1 [ RunTime:0.005845s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'contact/add' LIMIT 1 [ RunTime:0.005275s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'contact/edit' LIMIT 1 [ RunTime:0.003820s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'contact/del' LIMIT 1 [ RunTime:0.003521s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'contact/multi' LIMIT 1 [ RunTime:0.004023s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 184 , 'contact/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.020320s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 184 , 'contact/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.003393s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 184 , 'contact/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.003201s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 184 , 'contact/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.003780s ]
+[ 2019-01-12T11:08:20+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 184 , 'contact/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547262500 , 1547262500) [ RunTime:0.003193s ]
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004756s ]
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T11:14:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011368s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T11:14:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'link' [ RunTime:0.001956s ]
+[ 2019-01-12T11:14:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_link' [ RunTime:0.001896s ]
+[ 2019-01-12T11:14:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'honghai' AND table_name = 'fa_link' ORDER BY ORDINAL_POSITION [ RunTime:0.019861s ]
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LOG ] INIT File
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005752s ]
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-01-12T11:14:36+08:00 ][ info ] [ LANG ] E:\honghai\fastadmin\application\admin\lang/zh-cn.php
+[ 2019-01-12T11:14:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012475s ] mysql:host=127.0.0.1;port=3306;dbname=honghai;charset=utf8
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.030380s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'link' LIMIT 1 [ RunTime:0.001416s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'link' , '联系模块' , 'fa fa-link\r' , '' , 1 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.038197s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'link/index' LIMIT 1 [ RunTime:0.001213s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'link/add' LIMIT 1 [ RunTime:0.000877s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'link/edit' LIMIT 1 [ RunTime:0.000882s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'link/del' LIMIT 1 [ RunTime:0.000803s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'link/multi' LIMIT 1 [ RunTime:0.000736s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 190 , 'link/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.001185s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 190 , 'link/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.001242s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 190 , 'link/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.000942s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 190 , 'link/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.000943s ]
+[ 2019-01-12T11:14:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 190 , 'link/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1547262877 , 1547262877) [ RunTime:0.000886s ]
