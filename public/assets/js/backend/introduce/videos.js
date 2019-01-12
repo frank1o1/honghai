@@ -26,8 +26,18 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'weigh', title: __('Weigh')},
-                        {field: 'file', title: __('File')},
-                        {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
+                        {
+                            field: 'file', title: __('File'), formatter: function (value, row, index) {
+                                return "<a href='" + value + "' target='_self'  class='btn btn-dialog'><img src=\"https://tool.fastadmin.net/icon/mp4.png\" onerror=\"this.src='https://tool.fastadmin.net/icon/'+'/uploads/20190112/56d1b97b9d43bbb4c3287c3e60815acb.mp4'.split('.').pop()+'.png';this.onerror=null;\" style='width: 50%;height: 50%;'></a>";
+                            }
+                        },
+                        {
+                            field: 'operate',
+                            title: __('Operate'),
+                            table: table,
+                            events: Table.api.events.operate,
+                            formatter: Table.api.formatter.operate
+                        }
                     ]
                 ]
             });

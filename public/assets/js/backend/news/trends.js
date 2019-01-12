@@ -25,12 +25,32 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'category_id', title: __('Category_id')},
+                        {
+                            field: 'category.name', title: __('Category_id'), addClass: 'selectpage',
+                            data: 'data-source="news/category/index" data-field="name" data-primary-key="name"'
+                        },
                         {field: 'title', title: __('Title')},
                         {field: 'image', title: __('Image'), formatter: Table.api.formatter.image},
-                        {field: 'satus_switch', title: __('Satus_switch'), searchList: {"0":__('Satus_switch 0'),"1":__('Satus_switch 1')}, formatter: Table.api.formatter.toggle},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
+                        {
+                            field: 'status_switch',
+                            title: __('Satus_switch'),
+                            searchList: {"0": __('Satus_switch 0'), "1": __('Satus_switch 1')},
+                            formatter: Table.api.formatter.toggle
+                        },
+                        {
+                            field: 'createtime',
+                            title: __('Createtime'),
+                            operate: 'RANGE',
+                            addclass: 'datetimerange',
+                            formatter: Table.api.formatter.datetime
+                        },
+                        {
+                            field: 'operate',
+                            title: __('Operate'),
+                            table: table,
+                            events: Table.api.events.operate,
+                            formatter: Table.api.formatter.operate
+                        }
                     ]
                 ]
             });

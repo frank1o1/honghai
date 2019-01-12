@@ -36,6 +36,11 @@ class Trends extends Model
         return isset($list[$value]) ? $list[$value] : '';
     }
 
+    public function category()
+    {
+        return $this->belongsTo('Category','category_id')->setEagerlyType(0);
+    }
+
 
 
 

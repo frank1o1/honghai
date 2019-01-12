@@ -2,16 +2,16 @@
 
 namespace app\admin\controller\introduce;
 
-use app\common\controller\Backend;
+use controller\BasicAdmin;
 
 /**
  * 顶部介绍
  *
  * @icon fa fa-circle-o
  */
-class Top extends Backend
+class Top extends BasicAdmin
 {
-    
+
     /**
      * Top模型对象
      * @var \app\admin\model\introduce\Top
@@ -24,12 +24,17 @@ class Top extends Backend
         $this->model = new \app\admin\model\introduce\Top;
 
     }
-    
+
     /**
      * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
      * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
-    
+
+    protected function saveResult($row)
+    {
+        $this->model->where('id', '<', $row['id'])->delete();
+    }
+
 
 }

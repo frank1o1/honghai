@@ -27,7 +27,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'id', title: __('Id')},
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'name', title: __('Name')},
-                        {field: 'avatar', title: __('Avatar')},
+                        {field: 'avatar', title: __('Avatar'), formatter: Table.api.formatter.image},
                         {field: 'post', title: __('Post')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

@@ -3,13 +3,14 @@
 namespace app\admin\controller\introduce;
 
 use app\common\controller\Backend;
+use controller\BasicAdmin;
 
 /**
  * 企业团队
  *
  * @icon fa fa-circle-o
  */
-class Team extends Backend
+class Team extends BasicAdmin
 {
     
     /**
@@ -30,6 +31,10 @@ class Team extends Backend
      * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
-    
+
+    protected function saveResult($row)
+    {
+        $this->model->where('id', '<', $row['id'])->delete();
+    }
 
 }
