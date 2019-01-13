@@ -77,6 +77,12 @@ class Index extends Api
         ));
     }
 
+    /**
+     * 新闻列表
+     * @param int $category 分类id
+     * @param int $page 页数
+     * @param int $pageSize 页面大小
+     */
     public function news()
     {
         $category = input('category/d', '');
@@ -110,6 +116,11 @@ class Index extends Api
         ));
     }
 
+    /**
+     * 服务范围列表
+     * @param int $page 页数
+     * @param int $pageSize 页面大小
+     */
     public function service()
     {
         $page = input('page/d', 1);
@@ -132,6 +143,11 @@ class Index extends Api
 
     }
 
+    /**
+     * 案例介绍
+     * @param int $page 页数
+     * @param int $pageSize 页面大小
+     */
     public function cases()
     {
         $page = input('page/d', 1);
@@ -154,6 +170,9 @@ class Index extends Api
 
     }
 
+    /**
+     * 联系我们
+     */
     public function contact()
     {
         $contact = Db::table('fa_contact')->whereNotNull('id')->field('email,mobile,address,longitude,latitude')->find();
@@ -170,6 +189,9 @@ class Index extends Api
         ));
     }
 
+    /**
+     * 关于我们
+     */
     public function about()
     {
         $top = Db::table('fa_introduce_top')->whereNotNull('id')->find();

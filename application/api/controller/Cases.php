@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: SNB-HH
- * Date: 2019/1/12
- * Time: 18:29
+ * User: Administrator
+ * Date: 2019\1\13 0013
+ * Time: 10:25
  */
 
 namespace app\api\controller;
@@ -13,31 +13,31 @@ use app\common\controller\Api;
 use think\Db;
 
 /**
- * 服务范围
- * Class Service
+ * 案例
+ * Class Cases
  * @package app\api\controller
  */
-class Service extends Api
+class Cases extends Api
 {
     protected $noNeedLogin = ['*'];
     protected $noNeedRight = ['*'];
 
     /**
      * 详情
-     * @param int $id 服务id
+     * @param int $id 案例id
      */
     public function detail()
     {
         $id = input('id/d');
-        $result = Db::table('fa_service')->find($id);
+        $result = Db::table('fa_document')->find($id);
         $result['image'] = $this->request->domain() . $result['image'];
-        $otherService = Db::table('fa_service')->where('id', '<>', $id)->field('id,title,image,summary')->limit(3)->select();
+        $otherService = Db::table('fa_document')->where('id', '<>', $id)->field('id,title,image,summary')->limit(3)->select();
         if (!empty($otherService)) {
             foreach ($otherService as &$value) {
                 $value['image'] = $this->request->domain() . $value['image'];
             }
         }
-        $result['other_service'] = $otherService;
+        $result['other_document'] = $otherService;
 
         $this->success('获取成功', $result);
     }
@@ -47,7 +47,7 @@ class Service extends Api
      */
     public function change()
     {
-        $result =  Db::table('fa_service')->field('id,title,image,summary')->orderRaw('rand()')->limit(3)->select();
+        $result =  Db::table('fa_document')->field('id,title,image,summary')->orderRaw('rand()')->limit(3)->select();
         if(!empty($result)){
             foreach($result as &$value){
                 $value['image'] = $this->request->domain() . $value['image'];
@@ -56,4 +56,5 @@ class Service extends Api
 
         $this->success('获取成功',$result);
     }
+
 }
