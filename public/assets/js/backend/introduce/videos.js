@@ -25,6 +25,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
+                        {field: 'title', title: __('Title')},
                         {field: 'weigh', title: __('Weigh')},
                         {
                             field: 'file', title: __('File'), formatter: function (value, row, index) {

@@ -25,6 +25,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
+                        {
+                            field: 'category.name', title: __('Category_id'), addClass: 'selectpage',
+                            data: 'data-source="categorys/index" data-field="name" data-primary-key="name"'
+                        },
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'title', title: __('Title')},
                         {field: 'image', title: __('Image'), formatter: Table.api.formatter.image},

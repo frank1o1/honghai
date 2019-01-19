@@ -145,16 +145,26 @@ class Index extends Api
 
     /**
      * 案例介绍
+     * @param int $category 分类id
      * @param int $page 页数
      * @param int $pageSize 页面大小
      */
     public function cases()
     {
+        $category = input('category/d', '');
         $page = input('page/d', 1);
         $pageSize = input('pageSize/d', 10);
 
-        $document = Db::table('fa_document')->field('id,title,image,summary')->order('weigh', 'desc')->page($page,
-            $pageSize)->select();
+        if (!empty($category)) {
+            $document = Db::table('fa_document')->where('category_id',
+                $category)->field('id,title,image,summary')->order('weigh', 'desc')->page($page,
+                $pageSize)->select();
+        } else {
+            $document = Db::table('fa_document')->field('id,title,image,summary')->order('weigh', 'desc')->page($page,
+                $pageSize)->select();
+        }
+
+        $categoryList = Db::table('fa_categorys')->select();
         if (!empty($document)) {
             foreach ($document as &$value) {
                 $value['image'] = $this->request->domain() . $value['image'];
@@ -162,9 +172,11 @@ class Index extends Api
         }
 
         $this->success('请求成功', array(
+            'category' => $category,
             'page' => $page,
             'pageSize' => $pageSize,
             'cases' => $document,
+            'categoryList' => $categoryList,
             'total' => Db::table('fa_document')->count()
         ));
 
@@ -227,6 +239,28 @@ class Index extends Api
             'development' => $development,
             'series' => $series
         ));
+    }
+
+    /**
+     * 导航栏
+     */
+    public function menu()
+    {
+        $list = Db::table('fa_menu')->select();
+        $this->success('获取成功', $list);
+    }
+
+    /**
+     * 导航顶部图
+     * @param int $id 菜单栏id
+     */
+    public function menuImage()
+    {
+        $id = input('id/d');
+        $image = Db::table('fa_top')->where('menu_id', $id)->value('image');
+        $image = $this->request->domain() . $image;
+
+        $this->success('获取成功', array('image' => $image));
     }
 
 }

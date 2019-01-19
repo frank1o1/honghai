@@ -23,6 +23,7 @@ class News extends Api
     protected $noNeedRight = ['*'];
 
     /**
+     * 详情
      * @param int $id 新闻id
      */
     public function detail()

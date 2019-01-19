@@ -8,19 +8,19 @@ class Document extends Model
 {
     // 表名
     protected $name = 'document';
-    
+
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = false;
 
     // 定义时间戳字段名
     protected $createTime = false;
     protected $updateTime = false;
-    
+
     // 追加属性
     protected $append = [
 
     ];
-    
+
 
     protected static function init()
     {
@@ -30,12 +30,10 @@ class Document extends Model
         });
     }
 
-    
-
-
-
-
-
+    public function category()
+    {
+        return $this->belongsTo('Categorys', 'category_id', '', [], 'LEFT')->setEagerlyType(0);
+    }
 
 
 }
