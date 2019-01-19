@@ -257,10 +257,10 @@ class Index extends Api
     public function menuImage()
     {
         $id = input('id/d');
-        $image = Db::table('fa_top')->where('menu_id', $id)->value('image');
-        $image = $this->request->domain() . $image;
+        $top = Db::table('fa_top')->where('menu_id', $id)->field('image,url')->find();
+        $top['image'] = $this->request->domain() . $top['image'];
 
-        $this->success('获取成功', array('image' => $image));
+        $this->success('获取成功', array('image' => $top['image'], 'url' => $top['url']));
     }
 
 }
